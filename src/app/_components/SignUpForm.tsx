@@ -56,28 +56,6 @@ export default function SignUpForm({ title }: { title: string }) {
 
           <label className="flex flex-col text-left">
             <span className="mb-1 font-medium text-blue-900 dark:text-blue-100">
-              Email
-            </span>
-            <input
-              type="email"
-              value={email}
-              onChange={(e) => {
-                setEmail(e.target.value);
-                if (emailError) setEmailError("");
-              }}
-              required
-              className={`border rounded px-3 py-2 focus:outline-none focus:ring focus:border-blue-300 dark:bg-zinc-800 dark:text-blue-100 ${emailError ? "border-red-500" : ""}`}
-              placeholder="you@example.com"
-            />
-            {emailError && (
-              <span className="text-red-600 dark:text-red-400 text-sm mt-1">
-                {emailError}
-              </span>
-            )}
-          </label>
-
-          <label className="flex flex-col text-left">
-            <span className="mb-1 font-medium text-blue-900 dark:text-blue-100">
               How would you like to be involved?
             </span>
             <select
