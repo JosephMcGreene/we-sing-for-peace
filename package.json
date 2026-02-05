@@ -1,6 +1,6 @@
 {
   "name": "sing-for-peace",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -8,6 +8,7 @@
     "start": "next start",
     "lint": "eslint"
   },
+  "author": "Joseph McGreene",
   "dependencies": {
     "next": "16.1.6",
     "react": "19.2.3",

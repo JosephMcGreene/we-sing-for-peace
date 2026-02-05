@@ -1,4 +1,4 @@
-import HomeListItem from "./_components/HomeListItem";
+import EventLI from "./_components/EventLI";
 
 export default function Home() {
   return (
@@ -6,11 +6,11 @@ export default function Home() {
       <span className={`mt-8 mb-4 text-2xl`}>Join us:</span>
 
       <ul className="flex flex-col gap-4">
-        <HomeListItem title="Portland Flash Mob!" />
+        <EventLI title="Portland Flash Mob!" />
 
-        <HomeListItem title="Neighborhood Caroling" />
+        <EventLI title="Neighborhood Caroling" />
 
-        <HomeListItem title="Vigil-style Learn & Sing-a-long" />
+        <EventLI title="Vigil-style Learn & Sing-a-long" />
       </ul>
     </main>
   );

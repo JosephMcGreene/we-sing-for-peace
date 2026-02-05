@@ -4,6 +4,7 @@ import { useState } from "react";
 
 export default function SignUpForm({ title }: { title: string }) {
   const [firstName, setFirstName] = useState("");
+  const [] = useState("");
   const [email, setEmail] = useState("");
   const [submitted, setSubmitted] = useState(false);
   const [emailError, setEmailError] = useState("");
@@ -52,6 +53,7 @@ export default function SignUpForm({ title }: { title: string }) {
               placeholder="Your first name"
             />
           </label>
+
           <label className="flex flex-col text-left">
             <span className="mb-1 font-medium text-blue-900 dark:text-blue-100">
               Email
@@ -73,6 +75,23 @@ export default function SignUpForm({ title }: { title: string }) {
               </span>
             )}
           </label>
+
+          <label className="flex flex-col text-left">
+            <span className="mb-1 font-medium text-blue-900 dark:text-blue-100">
+              How would you like to be involved?
+            </span>
+            <select
+              onChange={(e) => setFirstName(e.target.value)}
+              required
+              className="border rounded px-3 py-2 focus:outline-none focus:ring focus:border-blue-300 dark:bg-zinc-800 dark:text-blue-100"
+            >
+              <option value="">- Select an option -</option>
+              <option value="singer">Singer</option>
+              <option value="musician">Musician</option>
+              <option value="organizer">Organizer</option>
+            </select>
+          </label>
+
           <button
             type="submit"
             className="mt-4 bg-blue-700 hover:bg-blue-800 text-white font-bold py-2 px-4 rounded"

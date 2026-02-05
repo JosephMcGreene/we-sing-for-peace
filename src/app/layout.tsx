@@ -4,12 +4,6 @@ import Header from "./_components/Header";
 import Footer from "./_components/Footer";
 import localFont from "next/font/local";
 
-// const lackFont = localFont({
-//   src: "../../public/lack-regular-webfont.woff",
-//   variable: "--font-lack",
-//   display: "swap",
-// });
-
 const lackFont = localFont({
   src: "../../public/lack-regular-webfont.woff",
   variable: "--font-lack",

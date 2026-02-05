@@ -1,15 +1,16 @@
+@import "tailwindcss";
 
 @font-face {
-  font-family: 'Lack';
-  src: url('/lack-regular-webfont.woff') format('woff');
+  font-family: "Lack";
+  src: url("/lack-regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Lalezar';
-  src: url('/Lalezar-Regular-webfont.woff') format('woff');
+  font-family: "Lalezar";
+  src: url("/Lalezar-Regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -18,8 +19,8 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --font-lack: 'Lack', Arial, Helvetica, sans-serif;
-  --font-lalezar: 'Lalezar', Arial, Helvetica, sans-serif;
+  --font-lack: "Lack", Arial, Helvetica, sans-serif;
+  --font-lalezar: "Lalezar", Arial, Helvetica, sans-serif;
 }
 
 @theme inline {
@@ -41,10 +42,16 @@ body {
   color: var(--foreground);
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-lalezar);
 }
 
-p, span {
+p,
+span {
   font-family: var(--font-lack);
 }
