@@ -10,7 +10,7 @@ export default function Header() {
       <h1
         className={`${lalezarFont.className} text-5xl font-bold text-blue-900 dark:text-blue-100`}
       >
-        Sing for Peace
+        We Sing for Peace
       </h1>
     </header>
   );
