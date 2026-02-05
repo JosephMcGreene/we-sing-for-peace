@@ -4,7 +4,7 @@ import { useState } from "react";
 
 export default function SignUpForm({ title }: { title: string }) {
   const [firstName, setFirstName] = useState("");
-  const [] = useState("");
+  const [role, setRole] = useState("");
   const [email, setEmail] = useState("");
   const [submitted, setSubmitted] = useState(false);
   const [emailError, setEmailError] = useState("");
@@ -81,14 +81,14 @@ export default function SignUpForm({ title }: { title: string }) {
               How would you like to be involved?
             </span>
             <select
-              onChange={(e) => setFirstName(e.target.value)}
+              onChange={(e) => setRole(e.target.value)}
               required
               className="border rounded px-3 py-2 focus:outline-none focus:ring focus:border-blue-300 dark:bg-zinc-800 dark:text-blue-100"
             >
               <option value="">- Select an option -</option>
-              <option value="singer">Singer</option>
-              <option value="musician">Musician</option>
               <option value="organizer">Organizer</option>
+              <option value="singerOrMusician">Singer/Musician</option>
+              <option value="somethingElse">Something else</option>
             </select>
           </label>
 
